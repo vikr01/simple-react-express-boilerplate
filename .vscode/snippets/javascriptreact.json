@@ -1,0 +1,76 @@
+{
+  "React Class Component": {
+    "prefix": "reactstart",
+    "body": [
+      "//@flow",
+      "import React, {Component, Fragment} from 'react';",
+      "import type {Node} from 'react';",
+      "",
+      "type Props = {};",
+      "",
+      "export default class ${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g} extends Component<Props> {",
+      "\tprops: Props;",
+      "",
+      "\tstatic displayName = '${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g}';",
+      "",
+      "\tstatic propTypes = {};",
+      "",
+      "\tstatic defaultProps = {};",
+      "",
+      "\tconstructor(props: Props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\trender(): Node {",
+      "\t\treturn <Fragment>{null}</Fragment>;",
+      "\t}",
+      "}",
+      ""
+    ]
+  },
+
+  "React Function Component": {
+    "prefix": "freactstart",
+    "body": [
+      "//@flow",
+      "import React, {Fragment} from 'react';",
+      "import type {Node} from 'react';",
+      "",
+      "type Props = {};",
+      "",
+      "const ${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g} = (props: Props): Node => <Fragment>{[]}</Fragment>;",
+      "",
+      "${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g}.displayName = '${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g}';",
+      "",
+      "${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g}.propTypes = {};",
+      "",
+      "${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g}.defaultProps = {};",
+      "",
+      "export default ${TM_FILENAME_BASE/([a-z]*)(_|-)+([a-z]*)/${1:/capitalize}${3:/capitalize}/g};",
+      ""
+    ]
+  },
+
+  "React Function Component in index.js": {
+    "prefix": "ifreactstart",
+    "body": [
+      "//@flow",
+      "import React, {Fragment} from 'react';",
+      "import type {Node} from 'react';",
+      "",
+      "type Props = {};",
+      "",
+      "const ${TM_DIRECTORY/^.+\\/(.*)$/$1/} = (props: Props): Node => <Fragment>{[]}</Fragment>;",
+      "",
+      "${TM_DIRECTORY/^.+\\/(.*)$/$1/}.displayName = '${TM_DIRECTORY/^.+\\/(.*)$/$1/}';",
+      "",
+      "${TM_DIRECTORY/^.+\\/(.*)$/$1/}.propTypes = {};",
+      "",
+      "${TM_DIRECTORY/^.+\\/(.*)$/$1/}.defaultProps = {};",
+      "",
+      "export default ${TM_DIRECTORY/^.+\\/(.*)$/$1/};",
+      ""
+    ]
+  }
+}

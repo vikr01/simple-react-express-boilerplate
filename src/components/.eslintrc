@@ -1,0 +1,11 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "commonjs": false
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": 0
+  }
+}
