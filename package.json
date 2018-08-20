@@ -1,9 +1,9 @@
 {
-  "name": "@vik/simple-react-boilerplate",
+  "name": "@vik/simple-react-express-boilerplate",
   "license": "MIT",
   "author": "Vikram Rangaraj <vik120@icloud.com> (https://github.com/vikr01)",
-  "repository": "https://github.com/vikr01/simple-react-boilerplate.git",
-  "bugs": "https://github.com/nutanix/vikr01/simple-react-boilerplate/issues",
+  "repository": "https://github.com/vikr01/simple-react-express-boilerplate.git",
+  "bugs": "https://github.com/nutanix/vikr01/simple-react-express-boilerplate/issues",
   "version": "0.0.1",
   "main": "dist/server.js",
   "scripts": {
