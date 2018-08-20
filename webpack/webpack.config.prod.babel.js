@@ -22,6 +22,12 @@ export default merge.smartStrategy({
     minimizer: [
       new UglifyJsPlugin({
         parallel: true,
+        uglifyOptions: {
+          mangle: true,
+          compress: {
+            drop_console: true,
+          },
+        },
       }),
     ],
   },
